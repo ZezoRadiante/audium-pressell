@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audium Gotas - Adeus Zumbido e Labirintite</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      color: #222;
+      text-align: center;
+      line-height: 1.6;
+    }
+    header {
+      background: #ff0000;
+      color: #fff;
+      padding: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    .container {
+      max-width: 650px;
+      margin: auto;
+      padding: 15px;
+    }
+    .mockup img {
+      max-width: 280px;
+      margin: 20px auto;
+      display: block;
+    }
+    .highlight {
+      background: #fff3cd;
+      color: #856404;
+      padding: 12px;
+      border-radius: 8px;
+      margin: 20px 0;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    ul.benefits {
+      text-align: left;
+      max-width: 500px;
+      margin: 20px auto;
+      padding-left: 20px;
+    }
+    ul.benefits li {
+      font-size: 15px;
+      margin: 10px 0;
+    }
+    .cta {
+      margin: 30px 0;
+    }
+    .cta a {
+      background: #25D366;
+      color: #fff;
+      text-decoration: none;
+      padding: 16px 30px;
+      border-radius: 8px;
+      font-size: 20px;
+      font-weight: bold;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+    .cta a:hover {
+      background: #1da851;
+    }
+    .whatsapp-fixed {
+      position: fixed;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #25D366;
+      color: #fff;
+      padding: 14px 30px;
+      border-radius: 50px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 9999;
+    }
+    .whatsapp-fixed:hover {
+      background: #1da851;
+    }
+    .testimonials {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    .testimonials p {
+      font-style: italic;
+      margin: 10px 0;
+    }
+    .scarcity {
+      color: red;
+      font-weight: bold;
+      margin: 20px 0;
+      font-size: 18px;
+    }
+    .counter {
+      font-size: 22px;
+      font-weight: bold;
+      color: #d9534f;
+      margin: 15px 0;
+    }
+    footer {
+      background: #f5f5f5;
+      color: #555;
+      padding: 12px;
+      font-size: 13px;
+      margin-top: 20px;
+    }
+  </style>
+  <script>
+    // contador fake
+    function startCountdown() {
+      let count = 10; // minutos
+      let seconds = 0;
+      setInterval(() => {
+        if (seconds === 0) {
+          if (count === 0) {
+            count = 10;
+          } else {
+            count--;
+            seconds = 59;
+          }
+        } else {
+          seconds--;
+        }
+        document.getElementById("countdown").innerText =
+          (count < 10 ? "0" + count : count) + ":" + (seconds < 10 ? "0" + seconds : seconds);
+      }, 1000);
+    }
+    window.onload = startCountdown;
+  </script>
+</head>
+<body>
+
+  <header>
+    <h1>🔥 O Fim do Zumbido e da Labirintite Está Aqui!</h1>
+    <p>Audium Gotas Premium – 100% Natural e Eficaz</p>
+  </header>
+
+  <div class="container">
+    <div class="mockup">
+      <img src="img/mockup_audium.png" alt="Audium Gotas">
+    </div>
+
+    <div class="highlight">
+      💡 Pague só quando receber o produto em sua casa!
+    </div>
+
+    <h2>Por que milhares já escolheram Audium Gotas?</h2>
+    <ul class="benefits">
+      <li>✅ Elimina o zumbido e chiado no ouvido</li>
+      <li>✅ Combate tonturas e melhora o equilíbrio</li>
+      <li>✅ Fórmula 100% natural com ativos exclusivos</li>
+      <li>✅ Resultados rápidos e comprovados</li>
+    </ul>
+
+    <div class="scarcity">⚠️ Restam apenas 14 unidades disponíveis no estoque!</div>
+    <div class="counter">Oferta expira em: <span id="countdown"></span></div>
+
+    <div class="cta">
+      <a href="https://api.whatsapp.com/send?phone=558399306422&text=Ol%C3%A1%2C%20quero%20melhorar%20minha%20audi%C3%A7%C3%A3o!" target="_blank">
+        👉 QUERO MEU AUDIUM AGORA!
+      </a>
+    </div>
+
+    <div class="testimonials">
+      <h3>O que nossos clientes dizem:</h3>
+      <p>“Sofria com zumbido há anos, em 2 semanas já senti melhora!” — Maria, 62 anos</p>
+      <p>“Não acreditava, mas funcionou! Meu equilíbrio voltou ao normal.” — João, 54 anos</p>
+      <p>“Produto maravilhoso, entrega rápida e paguei só quando recebi.” — Ana, 48 anos</p>
+    </div>
+
+    <div class="cta">
+      <a href="https://api.whatsapp.com/send?phone=558399306422&text=Ol%C3%A1%2C%20quero%20melhorar%20minha%20audi%C3%A7%C3%A3o!" target="_blank">
+        🚀 GARANTIR MINHA OFERTA AGORA!
+      </a>
+    </div>
+  </div>
+
+  <!-- Botão fixo de WhatsApp -->
+  <a class="whatsapp-fixed" href="https://api.whatsapp.com/send?phone=558399306422&text=Ol%C3%A1%2C%20quero%20melhorar%20minha%20audi%C3%A7%C3%A3o!" target="_blank">
+    📲 Falar no WhatsApp
+  </a>
+
+  <footer>
+    <p>Compra Segura | Produto Original | Garantia de Satisfação</p>
+  </footer>
+
+</body>
+</html>
